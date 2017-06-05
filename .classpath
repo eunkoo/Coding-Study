@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="codejam2017_1/src"/>
+	<classpathentry kind="src" path="codejam2017_2/src"/>
+	<classpathentry kind="src" path="codejam2017_3/src"/>
+	<classpathentry kind="src" path="codejam2017_4/src"/>
+	<classpathentry kind="src" path="codejam2017_5/src"/>
+	<classpathentry kind="src" path="codjam_0509/src"/>
+	<classpathentry kind="src" path="hackerank/ProjectEuler"/>
+	<classpathentry kind="src" path="leetcode/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="codejam2017_1/bin"/>
+</classpath>
