@@ -20,7 +20,7 @@ class Solution {
 		if(root == null) return true;
 		return check(root.left,root.right);
 	}
-
+	// recursive function for check left children and right children
 	boolean check(TreeNode p, TreeNode q){
 		if(p == null && q == null)   {
 			return true;
