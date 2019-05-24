@@ -30,11 +30,13 @@ class Solution {
 		ListNode fast = head;
 		ListNode slow = head;
 		if(head == tail) return null;
-
+		
+		// fast가 tail까지 순회하면 slow가 중앙에 옴
 		while(fast!=tail && fast.next!=tail){
 			fast = fast.next.next;
 			slow = slow.next;
 		}
+		
 		TreeNode root = new TreeNode(slow.val);
 		root.left = toBST(head, slow);
 		root.right = toBST(slow.next,tail);
