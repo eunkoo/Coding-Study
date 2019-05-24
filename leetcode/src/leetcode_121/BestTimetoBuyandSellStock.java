@@ -24,9 +24,6 @@ class Solution {
             int c_pro = prices[i] - buy;
             max_pro = Math.max(max_pro,c_pro);
         }
-        return max_pro < 0 ? 0 : max_pro;
-        }
-        return res;
-        
+        return max_pro < 0 ? 0 : max_pro;       
     }
 }
