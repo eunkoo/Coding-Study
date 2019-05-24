@@ -12,16 +12,19 @@ public class BestTimetoBuyandSellStock {
 }
 class Solution {
     public int maxProfit(int[] prices) {
-        if(prices == null || prices.length == 0) return 0;
-        int len = prices.length, buy = 0,sell =0, res = 0;
-        for(int i=0;i<len;i++){
-            buy = prices[buy] > prices[i] ? i : buy;
-            if(i > buy){
-                sell =  prices[i] > prices[buy]  ? i : sell;
-            if(sell > buy)
-                res = Math.max(res, prices[sell] - prices[buy]);
-               //System.out.println("res "+res+" i "+i+" buy "+buy+" sell "+sell);
+ 
+	if(prices.length<2) return 0;
+        int buy = prices[0];
+        int max_pro = Integer.MIN_VALUE;
+        for(int i=1;i<prices.length;i++){
+            if(buy > prices[i]){
+                buy = prices[i];
+                continue;
             }
+            int c_pro = prices[i] - buy;
+            max_pro = Math.max(max_pro,c_pro);
+        }
+        return max_pro < 0 ? 0 : max_pro;
         }
         return res;
         
